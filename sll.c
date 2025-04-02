@@ -16,7 +16,7 @@ void CreateList(int x)
     tempnode->next=NULL;
     head=tempnode;
 }
-void appendnode(int x) // insertion at the beginning
+void appendnode(int x) // insertion at the end
 {
     snode *tempnode=head;
     snode *newnode=NULL;
@@ -48,7 +48,7 @@ void PrintList(void)
         printf("\n");
     return;
 }
-void Insert(int x)
+void Insert(int x) //insertion atthe beginning
 {
     snode *newnode = NULL;
     newnode=(snode*)malloc(sizeof(snode));
